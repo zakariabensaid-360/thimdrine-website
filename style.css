@@ -20,6 +20,11 @@ body {
   background-color: var(--bg-main);
   color: var(--text-primary);
   font-family: sans-serif;
+  overflow-x: hidden;
+  width: 100vw;     /* 100% of viewport width */
+  height: 100vh;    
+    overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .container {
@@ -82,7 +87,31 @@ body {
   padding: 60px 0;
   text-align: center;
   background-color: #F4EFE6;
+
 }
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+}
+
+.hero-img {
+  width: 600px;
+  height: auto;
+  object-fit: cover;
+  
+}
+
+
+.products-section {
+  display: flex;
+  flex-direction: column;
+}
+
+
 
 .hero h1 {
   font-size: 2rem;
@@ -165,8 +194,107 @@ body {
   margin: 5px 0;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 3.75rem;
+
+   border-bottom: 1px solid var(--primary);
+   padding-bottom: 32px;
+
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin: 0.50rem;
+}
+
+.inputs input {
+  padding: 8px;
+}
+.title {
+  color: var(--primary);
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+}
+
+label {
+    color: var(--primary);
+  font-weight: bold;
+}
+
+.select-form {
+  display:  flex;
+  flex-direction: column;
+}
+.select-form label {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.select-form select {
+  padding: 12px;
+}
+
+.message label {
+    color: var(--primary);
+  font-weight: bold;
+}
+.message input {
+  padding: 12px;
+}
+.footer-contact {
+  display: flex;
+  align-items: center;
+  gap: 2.75rem;
+}
 
 
+
+
+.about {
+  display: flex;
+  flex-direction: column;
+  padding: 2.75rem;
+  align-items: center;
+  gap: 3.75rem;
+
+}
+
+.about section {
+  display: flex;
+  justify-items: self-end;
+  gap: 2.75rem;
+}
+
+.about section:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+}
+
+.small-title {
+  color: var(--secondary);
+  border-bottom: 1px solid var(--secondary);
+}
+.story p {
+  color: grey;
+  font-weight: bold;
+      overflow-wrap: break-word;
+  word-break: break-word;
+}
 @media (max-width: 768px) {
 .logo {
     display: none;
@@ -183,6 +311,48 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+}
+
+.hero-img {
+  width: auto;
+  height: auto;
+  padding: 4px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+
+.story {
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  overflow-wrap: break-word;
+}
+
+.about section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+    justify-content: center;
+  text-align: center;
+  align-items: center;
+  overflow-wrap: break-word;
+}
+.about section section img {
+  display: none;
 }
 
 }
