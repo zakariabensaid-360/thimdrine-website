@@ -28,11 +28,14 @@ body {
 }
 
 .container {
-  max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 16px;
 }
 
+
+textarea {
+  padding: 0.25rem;
+}
 
 .navbar {
   background-color: var(--bg-card);
