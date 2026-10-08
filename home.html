@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="./images/logo.svg">
+    <link rel="icon" href="./images/logo.svg" />
     <title>Thimdrine - Coopérative du Rif</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -11,13 +11,18 @@
     <header class="navbar">
       <div class="nav-container">
         <div class="logo">
-          <img src="./images/logo.svg" alt="Company Logo" width="50" height="50" />
+          <img
+            src="./images/logo.svg"
+            alt="Company Logo"
+            width="50"
+            height="50"
+          />
           <a href="#">Thimdrine</a>
         </div>
 
         <nav class="nav-menu">
           <ul class="nav-links">
-            <li><a href="./home.html">Home</a></li>
+            <li><a class="active" href="./home.html">Home</a></li>
             <li><a href="./pages/products.html">Products</a></li>
             <li><a href="./pages/about.html">About us</a></li>
             <li><a href="./pages/contact.html">Contact</a></li>
@@ -32,7 +37,7 @@
         <img class="hero-img" src="./images/hero.jpg" />
         <div class="img-infp">
           <h1>
-            You hear about the natrual food? but have you really tried it?
+            You hear about the <span class="hero-spa">Natrual</span> food? but have you really tried it?
           </h1>
           <p>We provide the Natural recources you need directly from the Rif</p>
           <a href="#products" class="btn-primary">Explore our products</a>
@@ -78,10 +83,33 @@
     </section>
 
     <footer class="footer">
-      <div class="container">
-        <p>&copy; 2026 Coopérative Thimdrine - Tous droits réservés.</p>
-        <p>Nador, Région du Rif, Maroc</p>
+      <div class="footer-content">
+        <div>
+          <h1 class="title">Coopérative Thimdrine</h1>
+          <address>
+            Route de Selouane, Nador, Maroc<br />
+            Tél. : <a href="tel:+212536000000">05 36 00 00 00</a><br />
+            E-mail :
+            <a href="mailto:contact@thimdrine.ma">contact@thimdrine.ma</a>
+          </address>
+        </div>
+
+        <div>
+          <h2 class="title">Horaires</h2>
+          <p>Du lundi au samedi<br />de 9 h à 18 h</p>
+        </div>
+
+        <div>
+          <h2 class="title">Plan de Site</h2>
+          <ul class="footer-links">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./pages/products.html">Products</a></li>
+            <li><a href="./pages/about.html">About us</a></li>
+            <li><a href="./pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
       </div>
+      <h5>© 2026 Coopérative Thimdrine · Site réalisé à YouCode Nador</h5>
     </footer>
   </body>
 </html>
